@@ -26,7 +26,7 @@ Repositório público: https://github.com/WallanDavid/DESAFIO-QA-BEEDOO-2026
 - Tratamento de comportamentos inesperados (ex.: falha de rede).
 
 ## Cenários e casos de teste
-- Planilha no Google Sheets (preencha o link público): ADICIONAR_LINK_AQUI
+- Planilha no Google Sheets (acesso leitura): https://docs.google.com/spreadsheets/d/1VbH8hElB1NechtLglL4Dx1Thv_BdtdSlxKjB6TVE-2I/edit?usp=sharing
 - Alternativamente, os casos estão versionados neste repositório:
   - TEST_CASES_GHERKIN.md
   - TEST_CASES_STEPS.md
