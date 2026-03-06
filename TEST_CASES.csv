@@ -1,0 +1,13 @@
+ID,Title,Objective,Preconditions,Steps,Data,Expected,Type,Priority,Status,EvidenceLink
+TC-001,Cadastrar curso válido,"Cadastrar curso com dados válidos","Acesso à página 'Cadastrar curso'","1. Abrir 'Cadastrar curso' | 2. Preencher campos obrigatórios | 3. Clicar 'Salvar'","Título: Curso de QA Básico; Descrição: Introdução a testes","Mensagem de sucesso; curso aparece na lista",Funcional,Crítica,Não executado,
+TC-002,Bloquear campos vazios,"Bloquear cadastro com campos obrigatórios vazios","Página 'Cadastrar curso' aberta","1. Deixar campos obrigatórios em branco | 2. Clicar 'Salvar'",,"Mensagens de validação; nada salvo",Funcional,Crítica,Não executado,
+TC-003,Título duplicado,"Impedir cadastro com título duplicado","Curso com título 'Curso de QA Básico' já existente","1. Informar mesmo título | 2. Salvar",,"Aviso de duplicidade; nada salvo",Funcional,Alta,Não executado,
+TC-004,Limite de caracteres título,"Validar limite máximo do título","Conhecer limite (ex.: 100)","1. Informar título > limite | 2. Salvar","Título >100 chars","Mensagem de tamanho máximo; nada salvo",Funcional,Média,Não executado,
+TC-005,Prevenir XSS,"Bloquear inserção de script em campos","Página 'Cadastrar curso' aberta","1. Inserir <script>... </script> | 2. Salvar","<script>alert(1)</script>","Sanitização/bloqueio; nenhum script executa",Segurança,Média,Não executado,
+TC-006,Cancelar cadastro,"Cancelar e não persistir dados","Ação de 'Cancelar' disponível","1. Preencher parcialmente | 2. Cancelar",,"Formulário limpo ou retorno sem salvar",Funcional,Baixa,Não executado,
+TC-007,Lista vazia,"Exibir mensagem quando não houver cursos","Sem cursos cadastrados","1. Abrir 'Listar cursos'",,"Mensagem de lista vazia exibida",Funcional,Crítica,Não executado,
+TC-008,Curso na listagem,"Exibir curso após cadastro","Ao menos um curso cadastrado","1. Abrir 'Listar cursos'",,"Curso recém-cadastrado é exibido",Funcional,Crítica,Não executado,
+TC-009,Ordenação padrão,"Verificar ordenação alfabética (se aplicável)","Múltiplos cursos com títulos distintos","1. Abrir 'Listar cursos'",,"Ordem alfabética por título (ou documentar a real)",Funcional,Média,Não executado,
+TC-010,Persistência pós-refresh,"Manter cursos após atualizar página","Cursos visíveis em listagem","1. Pressionar F5/atualizar",,"Cursos permanecem visíveis",Funcional,Média,Não executado,
+TC-011,Erro de rede,"Tratar falha de rede ao salvar","Possibilidade de simular offline","1. Ativar offline | 2. Salvar",,"Mensagem de erro e possibilidade de nova tentativa",Resiliência,Alta,Não executado,
+TC-012,Responsividade,"Verificar layout em viewport mobile","Ferramentas de dev/viewport","1. Abrir app em 375x667 | 2. Navegar",,"Layout ajustado e utilizável",UX,Média,Não executado,
